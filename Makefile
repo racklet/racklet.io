@@ -18,7 +18,7 @@ serve:
 		--disableFastRender
 
 production-build:
-	hack/gen-content.sh
+	# hack/gen-content.sh
 	hugo \
 		--gc \
 		--minify \
