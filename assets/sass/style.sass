@@ -9,12 +9,12 @@
 {{- $fontAwesomeUrl     := printf "https://use.fontawesome.com/releases/v%s/css/all.css" $fontAwesomeVersion }}
 @charset "utf-8"
 
-// Flux color palette
-$flux-darkest-blue: #3570e3
-$flux-dark-blue: #2a7de3
-$flux-lighter-blue: #1b8de2
-$flux-light-blue: #0096e1
-$flux-black: #1a1a1a
+// Color palette
+$theme-darkest-blue: #3570e3
+$theme-dark-blue: #2a7de3
+$theme-lighter-blue: #1b8de2
+$theme-light-blue: #0096e1
+$theme-black: #1a1a1a
 
 // Other colors
 $slack-green: #74cdb0
@@ -27,9 +27,9 @@ $linkedin-blue: #0e76a8
 @import "bulma/sass/utilities/initial-variables"
 @import "bulma/sass/utilities/functions"
 
-$primary: $flux-dark-blue
-$secondary: $flux-light-blue
-$dark: $flux-black
+$primary: $theme-dark-blue
+$secondary: $theme-light-blue
+$dark: $theme-black
 
 $link: $primary
 $family-sans-serif: "{{ $sansSerifFont }}", sans-serif
