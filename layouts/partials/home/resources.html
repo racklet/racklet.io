@@ -1,6 +1,7 @@
 {{ $title     := site.Params.resources.title }}
 {{ $summary   := site.Params.resources.summary | markdownify }}
 {{ $resources := site.Params.resources.items }}
+{{ if site.Params.resources }}
 <section class="hero is-medium is-light">
   <div class="hero-body">
     <div class="container has-text-centered">
@@ -26,3 +27,4 @@
     </div>
   </div>
 </section>
+{{ end }}
