@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Flux"
+title = "Racklet"
 enableRobotsTXT = true
 enableEmoji = true
 
@@ -35,276 +35,172 @@ time_format_blog = "2006-01-02"
 [[menus.main]]
 name = "Blog"
 url = "/blog"
+weight = 10
+
+[[menus.main]]
+identifier = "docs"
+name = "Docs"
+weight = 20
+
+[[menus.main]]
+name = "Racklet"
+parent = "docs"
+url = "https://docs.racklet.io"
+weight = 1
 
 [[menus.main]]
 name = "Community"
 url = "/community"
+weight = 30
 
 [[menus.main]]
 identifier = "project"
 name = "Project"
+weight = 40
 
 [[menus.main]]
 name = "Code of Conduct"
 parent = "project"
-url = "https://github.com/fluxcd/community/blob/main/CODE_OF_CONDUCT.md"
+url = "https://github.com/racklet/racklet/blob/main/CODE_OF_CONDUCT.md"
 weight = 1
 
 [[menus.main]]
 name = "Community"
 parent = "project"
-url = "https://github.com/fluxcd/community/blob/main/COMMUNITY.md"
+url = "https://github.com/racklet/racklet/blob/main/COMMUNITY.md"
 weight = 20
 
 [[menus.main]]
 name = "Contributing"
 parent = "project"
-url = "https://github.com/fluxcd/community/blob/main/CONTRIBUTING.md"
+url = "https://github.com/racklet/racklet/blob/main/CONTRIBUTING.md"
 weight = 30
 
-[[menus.main]]
-name = "Governance"
-parent = "project"
-url = "https://github.com/fluxcd/community/blob/main/GOVERNANCE.md"
-weight = 40
-
-[[menus.main]]
-name = "Security"
-parent = "project"
-url = "https://github.com/fluxcd/community/blob/main/SECURITY.md"
-weight = 50
-
-[[menus.main]]
-name = "Branding"
-parent = "project"
-url = "https://branding.cncf.io/projects/flux"
-weight = 9999
-
 [params]
-description          = "Open and extensible continuous delivery solution for Kubernetes."
-copyright            = "The Flux authors"
-github_repo          = "fluxcd/flux2"
-github_website_repo  = "fluxcd/website"
-slack                = "https://cloud-native.slack.com/messages/flux"
-twitter              = "https://twitter.com/fluxcd"
-linkedin             = "https://linkedin.com/groups/8985374"
-mailing_list         = "https://lists.cncf.io/g/cncf-flux-dev"
-youtube              = "https://www.youtube.com/playlist?list=PLbx4FZ4kOKntmgJqaT-iJ8tn4xat150yL"
-support              = "/support"
+description          = "Open Source Scale Model of a Data Center using Raspberry Pis."
+copyright            = "The Racklet authors"
+github_repo          = "racklet/racklet"
+github_website_repo  = "racklet/racklet.io"
+slack                = "https://osfw.slack.com/messages/racklet/"
+twitter              = "https://twitter.com/kubernetesonarm/"
+# linkedin             = ""
+# mailing_list         = ""
+# youtube              = ""
+# support              = "/support"
 rss                  = "/blog/index.xml"
 font_awesome_version = "5.9.0"
 
 notification = """
-📣 **This is the new website for Flux version 2 and GitOps Toolkit, currently in active development.** If you are looking for the Flux v1 documentation, **[please click here](https://docs.fluxcd.io)**.<br /><br />
-📣 **[Flux v1 is in maintenance mode](https://github.com/fluxcd/flux/issues/3320)!** We will soon start publishing guides which help you migrate Flux v2 and the GitOps Toolkit.<br /><br />
-🎉 **[Flagger](https://flagger.app) is now officially a Flux project.** This is another great step for Flux to become the family of GitOps projects.
+📣 **Racklet is a very early-stage project. If you want to get involved, join the [`#racklet`](https://osfw.slack.com/messages/racklet) channel in the [OSFC Slack](https://slack.osfw.dev/).**
 """
 
 [params.logos]
-navbar = "flux-horizontal-white.png"
-hero   = "flux-horizontal-color.png"
-footer = "flux-stacked-white.png"
-cncf   = "cncf-color.png"
+navbar = "racklet_transparent.png"
+hero   = "racklet_transparent.png"
+footer = "racklet_transparent.png"
 
 [[params.fonts]]
 name  = "Montserrat"
 sizes = [300,400,600,700]
 type  = "sans_serif"
 
-# Flux hero element
-[params.flux]
+# Main hero element
+[params.main]
 # title    = "Alternative title"
-subtitle = "Open and extensible continuous delivery solution for Kubernetes. Powered by GitOps Toolkit."
+subtitle = "Open source scale-model of Data Centers using commodity compute like Raspberry Pis."
 
-[[params.flux.buttons]]
+[[params.main.buttons]]
 text  = "Get started"
 color = "warning"
-url   = "https://toolkit.fluxcd.io/get-started/"
+url   = "https://docs.racklet.io/get-started/"
 
-[[params.flux.buttons]]
+[[params.main.buttons]]
 text = "Learn more"
-url  = "https://toolkit.fluxcd.io"
+url  = "https://docs.racklet.io"
 
 # Overview hero element
 [params.overview]
 title   = "Overview"
 summary = """
-Flux is a tool for keeping [Kubernetes](https://kubernetes.io) clusters in sync with sources of configuration
-(like Git repositories), and automating updates to configuration when there is new code to deploy.
+Racklet is a fully-integrated, miniature server rack. Racklet aims to inspire their users to explore how modern,
+advanced server architectures work in practice, in a tangible and educational way. With the new-found knowledge
+and inspiration, the user may apply their modernization skills on traditional server infrastructure, which
+improves the status quo and pushes the industry forward. <br/><br/> The following are the core values of the project: 
 """
 
 ## Overview features
+
+[[params.overview.features]]
+icon   = "fas fa-code fa-3x"
+header = "Security-first"
+text   = """
+We aspire to improve the status quo of "secure-by-default" solutions and concepts available, by using
+e.g. [Rust](https://www.rust-lang.org/), [LinuxBoot](https://www.linuxboot.org/) and [TUF](https://theupdateframework.io/).
+We challenge some security norms in the industry and move past e.g. insecure protocols like [TFTP](https://en.wikipedia.org/wiki/Trivial_File_Transfer_Protocol).
+The design methodologies "Defense in Depth" and "Least Privilege" will be applied.
+"""
+
 [[params.overview.features]]
 icon   = "fab fa-git-square fa-3x"
 header = "Declarative"
 text   = """
-Describe the entire desired state of your system in [Git](https://git-scm.com). This includes apps, configuration,
-dashboards, monitoring, and everything else.
-"""
-
-[[params.overview.features]]
-icon   = "fas fa-robot fa-3x"
-header = "Automated"
-text   = """
-Use [YAML](https://yaml.org) to enforce conformance to the declared system. You don't need to run
-[`kubectl`](https://kubectl.docs.kubernetes.io/) because all changes are synced automatically.
-"""
-
-[[params.overview.features]]
-icon   = "fas fa-code fa-3x"
-header = "Auditable"
-text   = """
-Everything is controlled through pull requests. Your Git history provides a sequence of transactions, allowing you to
-recover state from any snapshot.
+Declarative management using e.g. [YAML](https://yaml.org) and [Git](https://git-scm.com/) is prominent in the cloud native space, but not
+equally in the embedded and firmware space. We believe declarative APIs are very useful and powerful,
+as they allow for observe-diff-act reconciliation loops. Consistent Kubernetes-style APIs will be used
+across the stack.
 """
 
 [[params.overview.features]]
 icon   = "fas fa-drafting-compass fa-3x"
-header = "Designed for Kubernetes"
+header = "Open Source"
 text   = """
-Declaratively configurable using Custom Resources, state reports in the
-[object's status](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/#object-spec-and-status)
-and via [Kubernetes Events](https://kubernetes.io/docs/tasks/debug-application-cluster/debug-application-introspection/),
-and integrations with Kubernetes RBAC.
+Racklet is 100% open source software and hardware. Anyone can contribute, improve,
+fork and access the project. We want to bring innovation forward e.g. by publishing and
+using open (source) APIs, sharing code freely, and collaborating with fellow community members. 
 """
 
+[[params.overview.features]]
+icon   = "fas fa-robot fa-3x"
+header = "Accessible"
+text   = """
+Only use commonly available components that can be aquired in most parts of the world in a frictionless
+manner. For non-off-the-shelf casing and PCBs, we provide 3D-printable designs and easily reproducible
+schematics, respectively.
+"""
 
 [[params.overview.features]]
 icon   = "fas fa-box-open fa-3x"
-header = "Out-of-the-box integrations"
+header = "Upgradable"
 text   = """
-Support for e.g. [Kustomize](https://kustomize.io), [Helm](https://helm.sh); GitHub, GitLab, Harbor and custom
-webhooks; notifications to most team communication platforms; and many more.
+The modularity of the system should allow that individual pieces of the system (e.g. compute,
+storage, network switches, power supplies) should be upgradable without having to disrupt the
+rest of the rack, or disregard existing, functioning parts. This will minimize E-waste produced over time.
 """
 
 [[params.overview.features]]
 icon   = "fas fa-cube fa-3x"
 header = "Extensible"
 text   = """
-Easily create a continous delivery solution with only the components you need, or use the [GitOps Toolkit](#gitops-toolkit)
-to extend Flux.
+The hardware, software, and APIs all strive to be as modular and extensible as possible.
+We want to follow the Unix philosophy to allow for portability between e.g. different hardware
+modules implementing the same interfaces, or extensibility where the user demands custom features.
 """
-
-# Resources hero element
-[params.resources]
-title   = "Resources"
-summary = """
-If you are new to Flux, you might want to check out some of the following resources to get started.
-"""
-
-## Resource items
-[[params.resources.items]]
-title       = "Flux v2 with GitOps Toolkit by Viktor Farcic"
-description = """
-In this video, Viktor Farcic from "The DevOps Toolkit Series" demos and reviews Flux v2.
-"""
-url         = "https://www.youtube.com/watch?v=R6OeIgb7lUI"
-
-[[params.resources.items]]
-title       = "Flux v2 series by Geert Baeke"
-description = """
-In this series, Geert Baeke takes a deep dive in Flux v2 and the use of GitOps principles to deploy to Kubernetes.
-"""
-url         = "https://www.youtube.com/playlist?list=PLG9qZAczREKmCq6on_LG8D0uiHMx1h3yn"
-
-[[params.resources.items]]
-title       = "The Power of GitOps with Flux v2 and GitOps Toolkit II with Leigh Capili"
-description = """
-In this second demo, Leigh shows the multi-tenancy, remote cluster and dependency management capabilities of Flux.
-"""
-url         = "https://www.youtube.com/watch?v=fC2YCxQRUwU"
-
-[[params.resources.items]]
-title       = "The Kubelist Podcast: Flux with Michael Bridgen"
-description = """
-Michael talks about Flux, as well as GitOps adoption and progressive delivery.
-"""
-url         = "https://www.heavybit.com/library/podcasts/the-kubelist-podcast/ep-5-flux-with-michael-bridgen-of-weaveworks/"
-
-[[params.resources.items]]
-title       = "Rawkode Live: Introduction to GitOps Toolkit with Stefan Prodan"
-description = """
-Stefan's introduction to Flux and GitOps Toolkit at Rawkode Live.
-"""
-url         = "https://www.youtube.com/watch?v=HqTzuOBP0eY"
-
-[[params.resources.items]]
-title       = "The Power of GitOps with Flux v2 and GitOps Toolkit with Leigh Capili"
-description = """
-Leigh talks about getting started with Flux and GitOps Toolkit, reconciliation and observability, and the
-powerful use of Prometheus and Grafana.
-"""
-url         = "https://www.youtube.com/watch?v=0v5bjysXTL8"
-
-[[params.resources.items]]
-title       = " Introduction to GitOps and GitOps Toolkit by Stefan Prodan"
-description = """
-Alexis Richardson, CEO at Weaveworks and Stefan Prodan, maintainer of the Flux project introduce you to GitOps Toolkit.
-
-Talk from Cloud Native Nordics Tech Talks.
-"""
-url         = "https://www.youtube.com/watch?v=qQBtSkgl7tI"
-
-# Toolkit hero element
-[params.toolkit]
-title = "GitOps Toolkit"
-subtitle = """
-The set of APIs and controllers that make up the runtime for Flux.
-You can use the GitOps Toolkit to extend Flux, and to build your
-own systems for continuous delivery.
-"""
-image = "building-blocks.svg"
-
-[[params.toolkit.buttons]]
-text = "Get started"
-color = "dark"
-url = "https://toolkit.fluxcd.io/dev-guides/source-watcher/"
-
-[[params.toolkit.buttons]]
-text = "Learn more"
-url = "https://toolkit.fluxcd.io/components/"
-
-[params.family]
-title = "Other Flux projects"
-
-# Flagger hero element
-[params.flagger]
-title = "Flagger"
-subtitle = """
-Kubernetes Operator for the automation of promoting canary deployments using Istio,
-Linkerd, App Mesh, NGINX, Skipper, Contour, Gloo or Traefik routing for traffic
-shifting, and Prometheus metrics for canary analysis.
-
-The canary analysis can be extended with webhooks for running system
-integration/acceptance tests, load tests, or any other custom validation.
-"""
-image = "flagger-gitops.png"
-
-[[params.flagger.buttons]]
-text = "Get started"
-color = "dark"
-url = "https://docs.flagger.app/"
-
-[[params.flagger.buttons]]
-text = "Learn more"
-url = "https://flagger.app/"
-
 
 # Community hero element
 [params.community]
 title = "Community"
 summary = """
-The Flux project aspires to be the vendor-neutral home for GitOps in a Cloud Native world.<br>
-What we achieved up until today is only possible because of our community.
+The Racklet project aspires to engage a diverse set of people in the open source world, working
+towards a common goal of making data center software and hardware more accessible and secure.
 """
 
 [[params.community.highlights]]
 title = "GitHub Discussions"
 icon = "fab fa-github"
 text  = """
-Join the conversation in GitHub Discussions. Everything Flux v2 related ranging from specificiations and feature planning to Show & Tell happens here.
+We'd love to see you collaborate to this project! No contribution is too small, we value all input and perspectives.
 
-[Join the discussion today](https://github.com/fluxcd/toolkit/discussions)!
+Join the conversation on [GitHub](https://github.com/racklet/racklet).
 """
 
 [[params.community.highlights]]
@@ -312,17 +208,17 @@ title = "Slack"
 titleBgColor = "slack-green"
 icon = "fab fa-slack"
 text  = """
-If you want to talk to the Flux team and community in real-time, join us on Slack. This is a great way to get to know everyone.
+If you want to talk to the Racklet team and community in real-time, join us on Slack. This is a great way to get to know everyone.
 
-[Get an invite](https://slack.cnfc.io), or [go to the `#flux` channel](https://cloud-native.slack.com/messages/flux)
+[Get an invite](https://slack.osfw.dev), and [go to the `#racklet` channel](https://osfw.slack.com/messages/racklet)
 """
 
 [[params.community.highlights]]
-title = "Mailing list"
+title = "Official Documentation"
 titleBgColor = "info"
-icon = "far fa-paper-plane"
+icon = "fas fa-book"
 text  = """
-Join our (low-traffic) mailing list to stay up to day on announcements and sporadic discussions.
+In order to stay up to date with how to use the latest source code available, check out the official documentation.
 
-[Join the mailing list](https://lists.cncf.io/g/cncf-flux-dev)!
+[Go to the Racklet documentation site](https://docs.racklet.io)!
 """
