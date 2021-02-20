@@ -25,7 +25,7 @@ production-build:
 		--enableGitInfo
 
 preview-build:
-	hack/gen-content.sh
+	# hack/gen-content.sh
 	hugo \
 		--baseURL $(DEPLOY_PRIME_URL) \
 		--buildFuture \
@@ -34,7 +34,7 @@ preview-build:
 		--enableGitInfo
 
 branch-build:
-	hack/gen-content.sh
+	# hack/gen-content.sh
 	hugo \
 		--baseURL $(DEPLOY_PRIME_URL) \
 		--buildDrafts \
