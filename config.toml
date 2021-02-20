@@ -107,7 +107,7 @@ type  = "sans_serif"
 # Main hero element
 [params.main]
 # title    = "Alternative title"
-subtitle = "Open source scale-model of Data Centers using commodity compute like Raspberry Pis."
+subtitle = "Open Source scale model of Data Centers using commodity compute like Raspberry Pis."
 
 [[params.main.buttons]]
 text  = "Get started"
@@ -122,7 +122,7 @@ url  = "https://docs.racklet.io"
 [params.overview]
 title   = "Overview"
 summary = """
-Racklet is a fully-integrated, miniature server rack. Racklet aims to inspire their users to explore how modern,
+Racklet is a fully-integrated, miniature server rack. Racklet aims to inspire users to explore how modern,
 advanced server architectures work in practice, in a tangible and educational way. With the new-found knowledge
 and inspiration, the user may apply their modernization skills on traditional server infrastructure, which
 improves the status quo and pushes the industry forward. <br/><br/> The following are the core values of the project: 
@@ -134,7 +134,7 @@ improves the status quo and pushes the industry forward. <br/><br/> The followin
 icon   = "fas fa-code fa-3x"
 header = "Security-first"
 text   = """
-We aspire to improve the status quo of "secure-by-default" solutions and concepts available, by using
+We aspire to improve the status quo of "secure-by-default" solutions and concepts available by using
 e.g. [Rust](https://www.rust-lang.org/), [LinuxBoot](https://www.linuxboot.org/) and [TUF](https://theupdateframework.io/).
 We challenge some security norms in the industry and move past e.g. insecure protocols like [TFTP](https://en.wikipedia.org/wiki/Trivial_File_Transfer_Protocol).
 The design methodologies "Defense in Depth" and "Least Privilege" will be applied.
@@ -164,8 +164,8 @@ icon   = "fas fa-robot fa-3x"
 header = "Accessible"
 text   = """
 Only use commonly available components that can be aquired in most parts of the world in a frictionless
-manner. For non-off-the-shelf casing and PCBs, we provide 3D-printable designs and easily reproducible
-schematics, respectively.
+manner. For non-off-the-shelf casing and PCBs we provide 3D-printable designs and easily reproducible
+schematics respectively.
 """
 
 [[params.overview.features]]
@@ -174,7 +174,7 @@ header = "Upgradable"
 text   = """
 The modularity of the system should allow that individual pieces of the system (e.g. compute,
 storage, network switches, power supplies) should be upgradable without having to disrupt the
-rest of the rack, or disregard existing, functioning parts. This will minimize E-waste produced over time.
+rest of the rack or disregarding existing, functioning parts. This will minimize E-waste produced over time.
 """
 
 [[params.overview.features]]
@@ -183,14 +183,14 @@ header = "Extensible"
 text   = """
 The hardware, software, and APIs all strive to be as modular and extensible as possible.
 We want to follow the Unix philosophy to allow for portability between e.g. different hardware
-modules implementing the same interfaces, or extensibility where the user demands custom features.
+modules implementing the same interfaces, or extensibility where the user demands customized features.
 """
 
 # Community hero element
 [params.community]
 title = "Community"
 summary = """
-The Racklet project aspires to engage a diverse set of people in the open source world, working
+The Racklet project aspires to engage a diverse set of people in the open source world to work
 towards a common goal of making data center software and hardware more accessible and secure.
 """
 

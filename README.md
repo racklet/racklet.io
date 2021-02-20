@@ -1,8 +1,8 @@
 # racklet.io
 
-This repo houses the assets used to build the Racklet's project's landing page at https://racklet.io.
+This repo houses the assets used to build the Racklet project's landing page at https://racklet.io.
 
-> **Note**: The sources for Racklet's individual project's documentation (e.g. `racklet/racklet`) at https://docs.racklet.io, are housed in the respective Racklet repo (e.g. https://github.com/racklet/racklet). Issues and pull requests for specific project's documentation should be registered at that repo.
+> **Note**: The sources for an individual Racklet project's (e.g. `racklet/racklet`) documentation at https://docs.racklet.io are housed in its respective Racklet repo (e.g. https://github.com/racklet/racklet). Issues and pull requests for a specific project's documentation should be registered in its own repo.
 
 This website repo is forked from the excellent https://github.com/fluxcd/website repository hosting the very nice https://fluxcd.io website. Instead of reinventing the wheel, we figured we'd use the same website template over time. As time passes, we expect to diverge more and more from the original website template (intentionally) to not confuse readers with two website UIs that look the same. However, if there is some nice feature we can upstream, we are most happy to do so! Thanks to all the maintainers of the fluxcd/website project!
 
