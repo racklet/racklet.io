@@ -20,7 +20,7 @@
       </div>
 
       <div class="column">
-        <p class="title is-size-3 is-size-4-mobile has-text-white has-text-weight-light">
+        <p class="title is-size-4 is-size-4-mobile has-text-white has-text-weight-light">
           {{ $desc }}
         </p>
 
@@ -45,11 +45,13 @@
               {{ .Name }}
             </a>
             {{ end }}
+            <br/>
             {{ end }}
           </div>
 
           <div class="column">
             <div class="buttons">
+              {{ if $github }}
               <a class="button is-black is-inverted is-outlined" href="{{ $github }}" target="_blank">
                 <span class="icon">
                   <i class="fab fa-github"></i>
@@ -58,7 +60,9 @@
                   GitHub
                 </span>
               </a>
+              {{ end }}
 
+              {{ if $support }}
               <a class="button is-slack-green is-inverted is-outlined" href="{{ $support }}" target="_blank">
                 <span class="icon">
                   <i class="fa fa-comments"></i>
@@ -67,7 +71,9 @@
                   Support
                 </span>
               </a>
+              {{ end }}
 
+              {{ if $slack }}
               <a class="button is-slack-green is-inverted is-outlined" href="{{ $slack }}" target="_blank">
                 <span class="icon">
                   <i class="fab fa-slack"></i>
@@ -76,7 +82,9 @@
                   Slack
                 </span>
               </a>
+              {{ end }}
 
+              {{ if $mail }}
               <a class="button is-info is-inverted is-outlined" href="{{ $mail }}" target="_blank">
                 <span class="icon">
                   <i class="far fa-paper-plane"></i>
@@ -85,7 +93,9 @@
                   Mailing list
                 </span>
               </a>
+              {{ end }}
 
+              {{ if $twitter }}
               <a class="button is-twitter-blue is-inverted is-outlined" href="{{ $twitter }}" target="_blank">
                 <span class="icon">
                   <i class="fab fa-twitter"></i>
@@ -94,7 +104,9 @@
                   Twitter
                 </span>
               </a>
+              {{ end }}
 
+              {{ if $linkedin }}
               <a class="button is-linkedin-blue is-inverted is-outlined" href="{{ $linkedin }}" target="_blank">
                 <span class="icon">
                   <i class="fab fa-linkedin"></i>
@@ -103,7 +115,9 @@
                   LinkedIn
                 </span>
               </a>
+              {{ end }}
 
+              {{ if $youtube }}
               <a class="button is-black is-inverted is-outlined" href="{{ $youtube }}" target="_blank">
                 <span class="icon">
                   <i class="fab fa-youtube"></i>
@@ -112,6 +126,7 @@
                   YouTube
                 </span>
               </a>
+              {{ end }}
 
               {{with (not (in (.Site.Language.Get "disableKinds") "RSS")) }}
               <a class="button is-black is-inverted is-outlined" href="{{ $rss }}" target="_blank" title="rss">

@@ -6,6 +6,7 @@
 {{ $github  := printf "https://github.com/%s" $repo }}
 {{ $support := site.Params.support }}
 {{ $mail    := site.Params.mailing_list }}
+{{ $slack    := site.Params.slack }}
 <nav class="navbar is-black is-fixed-top">
   <div class="container">
     <div class="navbar-brand">
@@ -46,6 +47,7 @@
 
         <div class="navbar-item">
           <div class="buttons">
+            {{ if $github }}
             <a class="button is-light" href="{{ $github }}" target="_blank">
               <span class="icon">
                 <i class="fab fa-github"></i>
@@ -54,7 +56,9 @@
                 {{ $repo }}
               </span>
             </a>
+            {{ end }}
 
+            {{ if $support }}
             <a class="button is-success" href="{{ $support }}" target="_blank">
               <span class="icon">
                 <i class="fa fa-comments"></i>
@@ -63,7 +67,9 @@
                 Support
               </span>
             </a>
+            {{ end }}
 
+            {{ if $mail }}
             <a class="button is-info" href="{{ $mail }}" target="_blank">
               <span class="icon">
                 <i class="far fa-paper-plane"></i>
@@ -72,6 +78,18 @@
                 Mailing list
               </span>
             </a>
+            {{ end }}
+
+            {{ if $slack }}
+            <a class="button is-slack-green" href="{{ $slack }}" target="_blank">
+              <span class="icon">
+                <i class="fab fa-slack"></i>
+              </span>
+              <span class="has-text-weight-bold">
+                Slack
+              </span>
+            </a>
+            {{ end }}
           </div>
         </div>
       </div>

@@ -1,8 +1,8 @@
-{{ $title    := site.Params.flux.title | default site.Title }}
-{{ $subtitle := site.Params.flux.subtitle | default site.Params.description | markdownify }}
+{{ $title    := site.Params.main.title | default site.Title }}
+{{ $subtitle := site.Params.main.subtitle | default site.Params.description | markdownify }}
 {{ $logo     := printf "img/logos/%s" site.Params.logos.hero | relURL }}
-{{ $buttons  := site.Params.flux.buttons }}
-<section class="hero is-medium is-flux">
+{{ $buttons  := site.Params.main.buttons }}
+<section class="hero is-medium is-main">
   <div class="hero-body">
     <div class="container">
       <div class="columns is-vcentered">
@@ -23,9 +23,9 @@
         <div class="column is-half is-hidden-touch">
           <div class="terminal">
             <div class="icons"><span></span></div>
-            <div class="terminal-title">Terminal</div>
+            <div class="terminal-title">Initial Boot Sequence</div>
             <pre class="terminal-content">
-              <asciinema-player loop autoplay font-size="14px" rows=14 src="flux.cast"></asciinema-player>
+              <img src="/img/racklet.jpeg" /> 
             </pre>
           </div>
         </div>

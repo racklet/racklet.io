@@ -1,9 +1,9 @@
-The maintainers are generally available in Slack at
-https://cloud-native.slack.com in #flux (https://cloud-native.slack.com/messages/CLAJ40HV3)
-(obtain an invitation at https://slack.cncf.io/).
+The maintainers are generally available in the #racklet channel of
+the Open Source Firmware Slack (https://osfw.slack.com/messages/racklet/)
+(obtain an invitation at https://slack.osfw.dev/).
 
 In alphabetical order:
 
-Daniel Holbach, Weaveworks <daniel@weave.works> (github: @dholbach, slack: dholbach)
-Hidde Beydals, Weaveworks <hidde@weave.works> (github: @hiddeco, slack: hidde)
-Scott Rigby, Weaveworks <scott@weave.works> (github: @scottrigby, slack: scottrigby)
+Dennis Marttinen <twelho@welho.tech> (GitHub: @twelho, Slack: twelho)
+Lucas Käldström <lucas.kaldstrom@hotmail.co.uk> (GitHub: @luxas, Slack: luxas)
+Verneri Hirvonen <verneri.hirvonen.2@gmail.com> (GitHub: @chiplet, Slack: Verneri Hirvonen)
