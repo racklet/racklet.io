@@ -8,16 +8,16 @@ This repo houses the assets used to build the Racklet project's landing page at 
 
 This website repo is forked from the excellent https://github.com/fluxcd/website repository hosting the very nice https://fluxcd.io website.
 
-Instead of reinventing the wheel, we figured we'd use the same website template over time (Racklet is also Apache 2.0-licensed). As time passes, we expect to diverge more and more from the original website template (intentionally) to not confuse readers with two website UIs that look the same
+Instead of reinventing the wheel, we figured we'd use the same website template over time (Racklet is also Apache 2.0-licensed). As time passes, we expect to diverge more and more from the original website template (intentionally) to not confuse readers with two website UIs that look the same.
 
 However, if there is some nice feature we can upstream, we are most happy to do so!
 
-Thanks a lot to the maintainers of the `fluxcd/website` project, here listed for attribution:
+Thanks a lot to the maintainers of the `fluxcd/website` project, listed here for attribution:
 
 ```txt
-Daniel Holbach, Weaveworks <daniel@weave.works> (github: @dholbach, slack: dholbach)
-Hidde Beydals, Weaveworks <hidde@weave.works> (github: @hiddeco, slack: hidde)
-Scott Rigby, Weaveworks <scott@weave.works> (github: @scottrigby, slack: scottrigby)
+Daniel Holbach, Weaveworks <daniel@weave.works> (GitHub: @dholbach, Slack: dholbach)
+Hidde Beydals, Weaveworks <hidde@weave.works> (GitHub: @hiddeco, Slack: hidde)
+Scott Rigby, Weaveworks <scott@weave.works> (GitHub: @scottrigby, Slack: scottrigby)
 ```
 
 ## Running the site locally
